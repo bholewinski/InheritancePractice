@@ -15,7 +15,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     
     @Override
     public double getAnnualWages () {
-        return this.weeklyComission * 52 + getAnnualSalary();
+        return this.weeklyComission * 52 + getWeeklySalary() * 52;
     }
 
     public double getWeeklyComission() {
