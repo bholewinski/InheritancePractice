@@ -11,5 +11,20 @@ package my.concrete;
  * @author Gumby
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
+    private double weeklyComission;
+    
+    @Override
+    public double getAnnualWages () {
+        return this.weeklyComission * 52 + getWeeklySalary();
+    }
+
+    public double getWeeklyComission() {
+        return weeklyComission;
+    }
+
+    public void setWeeklyComission(double weeklyComission) {
+        this.weeklyComission = weeklyComission;
+    }
+    
     
 }
