@@ -11,5 +11,10 @@ package myabstract;
  * @author Gumby
  */
 public class HourlyEmployee extends Employee {
+
+    @Override
+    public double getAnnualWages() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
